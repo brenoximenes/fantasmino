@@ -1,0 +1,289 @@
+body, *, *:before, *:after{
+	box-sizing: border-box;
+
+}
+
+html, body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px; 
+	color: #888888;
+}
+
+h1,h2,h3,h4,h5,h6, .title {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: 	uppercase;
+	font-weight: 	bold;	
+	margin: 	0 0 1em;
+}
+h2{
+	font-size: 	1.6rem;
+}
+
+h3{
+	font-size: 	1.3rem;
+}
+
+p{
+	margin: 0.3em 0;
+	line-height: 1.5;
+}
+
+a{
+	color: 	inherit;	
+	font-weight: 	200;
+	text-decoration: 	none;
+}
+a:hover, a:visited, a:active {
+	text-decoration: 	none;
+	color: 	inherit;
+}
+
+.fixed-width{
+	width: 	940px;
+	margin: 	0 auto;
+	align-self: center;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+.data-block{
+	margin-bottom: 3rem;
+}
+
+/*==========
+	HEADER
+============*/
+.page-header{
+	background-color: black;
+	border-top: 5px solid #f8e530;
+	border-bottom: 7px solid #f8e530;
+	padding-bottom: 1em;
+	}
+
+	.page-header > div {
+		position: 	relative;	
+	}
+
+	.page-header > h1{
+		position: absolute;
+		overflow: hidden;
+		top: -100%;
+		left: -100%;
+		color: black;
+	}
+
+	.page-header .logo{
+		font-family: 'Bungee', cursive;
+		font-size: 	3em;
+		color: 	white;
+		position: 	absolute;	
+		padding-bottom: 0rem;
+	}
+
+	.page-header nav {
+		float: right;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: 	uppercase;
+		font-weight: 	black;
+	}
+
+
+	.page-header nav li {
+		color: #a4a2a2;
+		float: left;
+		margin-right: 3rem;
+		padding-top: 3rem;
+		padding-bottom: 0.5rem;
+		font-size: 0.8em;
+		font-weight: 300;	
+		text-transform: lowercase;
+		text-align: center;	
+	}
+
+	.page-header nav li:last-child{
+		margin-right: 	0em;
+	}
+
+	.page-header nav li em {
+		display: block;
+		color: white;
+		font-size: 15px;
+		text-transform: uppercase;
+		font-weight: 700;	
+
+	}
+
+/*===============
+	MAIN VISUAL
+================*/
+.main-background{
+	background-color: black;
+	display: block;
+	margin-top: -12px;
+}
+
+
+.main-visual{
+	background-color: black;
+	background-position: center; 
+	}
+
+    .main-visual img {
+        display: block;
+    }
+
+    .main-visual figcaption {
+        background-color: black;
+        padding: 0.5em 1em;
+    }
+
+    .main-visual figcaption > strong {
+        font-size: 1.4em;
+    }
+
+    .main-background:after {
+	content: " ";
+	display: 	block;	
+	height: 	9px;
+	margin-top: -30px;
+	background:	url(../images/pattern.png) left	top repeat-x;
+	}
+
+
+
+
+/*===============
+	CLAIMS
+================*/
+
+.claims{
+	background-color: #f8e530;
+}
+
+.claim{
+	float: left;
+	width: 20%;
+	margin: 5%;
+	
+}
+	.claim:last-child{
+		margin-right: 0;
+	}
+
+	.claim >a{
+		text-transform: 	uppercase;
+		font-weight: 	900;
+		
+	}
+
+	.claim p{
+		text-align: justify;
+	}
+
+	.claim header > i {
+		font-size: 3.5rem;
+		font-weight: bold;
+		padding-top: 10px;
+		float: left;
+		width: 25%;
+	}
+
+	.claim header >h2{
+		float: left;
+		width: 75%;
+
+	}
+    .claims:after {
+	content: " ";
+	display: 	block;	
+	height: 	9px;
+	margin-top: -30px;
+	background:	url(../images/pattern.png) left	top repeat-x;
+	}
+
+/*===============
+	PORTFOLIO
+================*/
+
+.portfolio {
+	position: relative;
+	
+}
+.portfolio:before {
+		content: " ";
+		display: block;
+		height: 25px;
+		background:	url(../images/pattern2.png) left top repeat-x;
+		margin-bottom: 3em;
+	}
+.portfolio .title-wraper{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+
+}
+.portfolio h2 {
+	display: inline;
+	background-color: #fff;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	font-size: 2em;
+}
+
+.work{
+	float: left;
+	width: 20%;
+	margin-right: 5%;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.work:last-child{
+	margin-right: 0;
+}
+.work figure {
+	margin-bottom: 1em;
+	width: 100%;
+	float: left;
+}
+
+
+/*===============
+	FOOTER
+================*/
+.page-footer:before{
+	content: " ";
+	display: 	block;	
+	height: 	9px;
+	background:	url(../images/pattern.png) left	top repeat-x;
+}
+
+.page-footer{
+	background-color: #f8e530;
+	font-size: 	1.1rem;
+	color: 	black;
+	height: 	60px;
+}
+
+
+.page-footer .copyright{
+	float: 	left;	
+}
+
+.page-footer .credits{
+	float: 	right;	
+}
+
+.page-footer-content{
+	padding: 1.5em 0
+}
+
